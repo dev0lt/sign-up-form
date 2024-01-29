@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+/* CSS RESET */
+
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   /* overflow: hidden; */
+  background-color: #eeeeee;
 }
 
 *,
@@ -39,6 +44,8 @@ ul {
   position: relative;
 }
 
+/* LEFT SIDE */
+
 .left {
   height: 100vh;
   width: 30%;
@@ -53,36 +60,99 @@ ul {
 }
 
 .logo {
-  width: 20%;
-  position: absolute;
-  bottom: 50%;
-  left: 40%;
-  /* z-index: 100; */
+  background-color: #00000059;
+  position: relative;
+  bottom: 80%;
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.logo > img {
+  width: 25%;
+  left: 37%;
+}
+
+.logo > p {
+  font-size: 2rem;
+  color: #eeeeee;
+}
+
+/* RIGHT SIDE */
 
 .right {
   width: 70%;
-  /* height: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .header {
-  margin: 35px;
+  margin: 0 5vh;
 }
 
-/* .user_form {
-  display: flex;
-  flex-direction: column;
-} */
+.form_wrapper > h1 {
+  color: #2c2c2c;
+  margin-bottom: 3vh;
+}
+
+span {
+  color: rgb(87, 87, 87);
+}
+
+.form_wrapper {
+  margin: 5vh 0 0 0;
+  padding: 3vh 5vh;
+  background-color: white;
+  -webkit-box-shadow: 0px 16px 27px -22px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 16px 27px -22px rgba(66, 68, 90, 1);
+  box-shadow: 0px 16px 27px -22px rgba(66, 68, 90, 0.7);
+}
 
 .form_row {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .form_cell {
+  width: 40vh;
   display: flex;
   flex-direction: column;
+  margin-right: 40px;
+}
+
+label {
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+}
+
+input {
+  border: solid rgb(87, 87, 87) 1px;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+/* BOTTOM BUTTONS */
+
+button {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.create_account {
+  margin: 5vh;
+  padding: 2vh;
+  width: 30vh;
+  background-color: #cd9ce2;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  box-shadow: 0px 16px 27px -25px rgba(66, 68, 90, 0.7);
+}
+
+.already_account {
+  margin-left: 5vh;
 }
