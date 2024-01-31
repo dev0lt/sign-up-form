@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>Sign up form</title>
   </head>
   <body>
@@ -55,18 +56,18 @@
                 <input type="number" id="phone" />
               </div>
             </div>
-            <div class="form_row">
-              <div class="form_cell">
+            <div class="form_row password_row">
+              <div class="form_cell password_cell">
                 <label for="password">
                   <span>PASSWORD</span>
                 </label>
-                <input type="password" id="password" />
+                <input type="password" id="password" class="error" />
               </div>
               <div class="form_cell">
                 <label for="confirm">
                   <span>CONFIRM PASSWORD</span>
                 </label>
-                <input type="password" id="confirm" />
+                <input type="password" id="confirm" class="error" />
               </div>
             </div>
           </form>
