@@ -48,8 +48,9 @@ ul {
 
 .left {
   height: 100vh;
-  width: 30%;
+  /* width: 30%; */
   position: relative;
+  flex: 1;
 }
 
 .background-image {
@@ -70,7 +71,7 @@ ul {
 }
 
 .logo > img {
-  width: 35%;
+  width: 10rem;
   left: 37%;
 }
 
@@ -82,10 +83,11 @@ ul {
 /* RIGHT SIDE */
 
 .right {
-  width: 70%;
+  /* width: 70%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 2;
 }
 
 .header {
@@ -117,7 +119,7 @@ span {
 }
 
 .form_cell {
-  width: 40vh;
+  width: min(170px, 30vw);
   display: flex;
   flex-direction: column;
   margin-right: 40px;
@@ -172,4 +174,29 @@ input:focus {
 
 .password_row {
   height: 75px;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .left {
+    height: 25vh;
+  }
+  .right {
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo > img {
+    width: 5rem;
+    left: 50%;
+  }
+  .already_account {
+    margin-left: 0;
+  }
 }
